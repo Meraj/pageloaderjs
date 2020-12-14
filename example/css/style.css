@@ -1,0 +1,23 @@
+.navigation{
+
+}
+.navigation ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.navigation li{
+    margin: .5rem 1rem;
+
+}
+.navigation li a{
+    text-decoration: none;
+    color: #10ac84;
+    padding: 1rem;
+    border: 1px solid #10ac84;
+    background: transparent;
+    border-radius: .2em;
+}
+

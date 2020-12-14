@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <!-- style -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!-- navigation -->
+<nav class="navigation">
+    <ul>
+        <li class="nav-btn"><a href="http://localhost/example/index.html">home</a></li>
+        <li class="nav-btn"><a href="http://localhost/example/page.html">page</a></li>
+    </ul>
+</nav>
+
+<main class="container" id="AppBody">
+    <h1>This is index</h1>
+</main>
+
+<script type="text/javascript" src="js/pageloader.js"></script>
+<script>
+    pageloader('nav-btn','AppBody',function (){
+        alert('start Loading page')
+    },function (){
+        alert('page loaded successfully')
+    },function (){
+        alert('load error')
+    });
+</script>
+</body>
+</html>
