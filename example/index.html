@@ -22,12 +22,13 @@
 
 <script type="text/javascript" src="js/pageloader.js"></script>
 <script>
-    pageloader('nav-btn','AppBody',function (){
+    pageloader('nav-btn',
+        'AppBody',function (){
         alert('start Loading page')
     },function (){
         alert('page loaded successfully')
     },function (){
-        alert('load error')
+        console.log('load error')
     });
 </script>
 </body>

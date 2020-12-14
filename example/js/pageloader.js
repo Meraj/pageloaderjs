@@ -23,12 +23,8 @@ function pageloader(NavigationBTN, AppBody, onStart, onSuccess, onError) {
         xmlHttp.onerror = function () {
             onError()
         }
-        xmlHttp.onreadystatechange = function () {
-            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-                updateAppBody(UrlLink, xmlHttp.responseText);
-            } else {
-                onError()
-            }
+        xmlHttp.onloadend = function (){
+            updateAppBody(UrlLink, xmlHttp.responseText);
         }
         xmlHttp.open("GET", UrlLink, true); // true for asynchronous
         xmlHttp.send(null);
